@@ -1,0 +1,878 @@
+{
+  "brandAnalysis": {
+    "colors": {
+      "primary": "#7C7C7C",
+      "secondary": "#F5F5F5",
+      "accent": "#7C7C7C",
+      "background": {
+        "light": "#FFFFFF",
+        "dark": "#7C7C7C"
+      },
+      "text": {
+        "primary": "#333333",
+        "secondary": "#555555",
+        "muted": "#7C7C7C"
+      },
+      "border": "#000000"
+    },
+    "modernPalette": {
+      "primary": "#2D3A4B",
+      "secondary": "#F0F2F5",
+      "accent": "#007AFF",
+      "background": {
+        "light": "#FFFFFF",
+        "dark": "#1A1A1A"
+      },
+      "text": {
+        "primary": "#2D3A4B",
+        "secondary": "#5A6B7C",
+        "muted": "#9AA7B3"
+      },
+      "border": "#000000",
+      "gradients": [
+        "linear-gradient(to right, #007AFF, #0056B3)",
+        "linear-gradient(to bottom, #F0F2F5, #E0E4E8)"
+      ],
+      "notes": "The modern palette shifts from a dull gray to a sophisticated dark blue-gray as primary, paired with a clean light gray and a vibrant, trustworthy blue accent. This provides better contrast, a more professional feel, and allows for engaging gradients while maintaining a sense of reliability and clarity."
+    },
+    "typography": {
+      "currentHeadingStyle": "Generic sans-serif (likely Arial or Helvetica), bold, all caps, tight letter spacing.",
+      "currentBodyStyle": "Generic sans-serif (likely Arial or Helvetica), regular weight, sentence case.",
+      "recommendedHeadingFont": "Montserrat",
+      "recommendedBodyFont": "Open Sans",
+      "fontPairingNotes": "Montserrat for headings offers a strong, modern, and professional aesthetic, conveying authority and clarity. Open Sans for body text ensures excellent readability and accessibility across all devices, complementing Montserrat without competing, creating a balanced and contemporary typographic system."
+    },
+    "visualStyle": {
+      "aesthetic": "corporate",
+      "borderRadius": "none",
+      "shadowStyle": "none",
+      "density": "comfortable",
+      "imageStyle": "Blurred hero image, circular cropped service images. Overall low resolution and dated feel."
+    },
+    "logo": {
+      "description": "A text-based logo 'WESTGATE ENTERPRISES, LLC' enclosed in a white rectangular box with a black border.",
+      "colors": [
+        "#000000",
+        "#FFFFFF"
+      ],
+      "style": "Utilitarian, blocky, text-only, with a strong border.",
+      "placement": [
+        "Centered in the top hero section, overlapping the blurred background image."
+      ]
+    },
+    "improvements": [
+      {
+        "current": "Generic gray color palette with no distinct accent color.",
+        "recommendation": "Implement a sophisticated dark blue-gray (#2D3A4B) as the primary, a clean light gray (#F0F2F5) as secondary, and a professional blue (#007AFF) as an accent. Introduce subtle gradients for depth.",
+        "reason": "The current palette is dull and lacks modern appeal. A refined, slightly cool-toned palette with a clear accent will convey professionalism, trust, and a contemporary brand identity, improving visual hierarchy and user engagement."
+      },
+      {
+        "current": "Generic sans-serif typography (e.g., Arial or Helvetica) used inconsistently for headings and body.",
+        "recommendation": "Adopt Montserrat for headings (bold, all caps for emphasis) and Open Sans for body text (regular weight, appropriate line height).",
+        "reason": "Modern, legible font pairing enhances readability and gives the brand a more contemporary and authoritative voice, establishing a clear visual hierarchy and improving the overall user experience."
+      },
+      {
+        "current": "Boxy design with sharp edges and no visual depth (no border-radius or shadows).",
+        "recommendation": "Apply a small border-radius (e.g., 4-8px) to interactive elements and cards, and introduce subtle shadows for depth and visual separation.",
+        "reason": "Softens the interface, makes it more inviting and modern, and adds a premium feel without being overly playful. Shadows can help create a sense of hierarchy and focus."
+      },
+      {
+        "current": "Blurred, low-impact hero image that doesn't clearly communicate the service.",
+        "recommendation": "Utilize a high-resolution, professional hero image that clearly depicts the service (e.g., a skilled electrician at work) with a subtle, branded color overlay for consistency and text legibility.",
+        "reason": "A strong, relevant hero image immediately communicates professionalism and expertise, engaging visitors more effectively and setting a professional tone for the website."
+      },
+      {
+        "current": "Logo is a basic text box with a black border, centrally placed and somewhat disconnected from the overall design.",
+        "recommendation": "Redesign the logo to be more integrated and modern, potentially incorporating a subtle logomark with the wordmark. Place it consistently in the top-left of the header for better brand recognition and navigation.",
+        "reason": "A modern, well-integrated logo enhances brand recognition and professionalism, making the site feel more cohesive and polished. Top-left placement is standard for navigation."
+      },
+      {
+        "current": "The 'CONTACT US' button is a flat, gray rectangle that blends into the background.",
+        "recommendation": "Style the 'CONTACT US' button using the new accent color (#007AFF), with a subtle border-radius, and a clear hover effect (e.g., slight color change or lift with shadow).",
+        "reason": "Improves the visibility and prominence of the primary call-to-action, making it more inviting and intuitive for users to interact with, thereby increasing conversion potential."
+      }
+    ]
+  },
+  "creativeDirection": {
+    "designPhilosophy": {
+      "vision": "To transform the perception of residential electrical services from a mundane necessity into an experience of modern reliability and sophisticated craftsmanship. We aim to create a digital presence that exudes professionalism, innovative thinking, and unwavering trust, setting a new benchmark for the industry.",
+      "emotionalResponse": "Users should feel confident, reassured, and impressed. The design should evoke a sense of cutting-edge expertise, instilling trust in our capabilities and inspiring a desire to engage with our services. It should feel premium, accessible, and effortlessly intuitive.",
+      "differentiators": [
+        "Bold, cinematic visual storytelling through dynamic hero sections and immersive scroll experiences.",
+        "Sophisticated typographic hierarchy and fluid scale that commands attention and ensures readability.",
+        "Intentional use of asymmetry and overlapping elements to create depth and visual intrigue, moving beyond standard grid layouts.",
+        "Subtle yet impactful animations and micro-interactions that delight users and enhance functional feedback.",
+        "A seamless, branded dark mode experience that is as thoughtfully designed as the light mode, showcasing attention to detail."
+      ]
+    },
+    "layoutConcepts": {
+      "heroApproach": "A full-bleed, high-resolution cinematic video loop (or dynamic image sequence) depicting abstract electrical currents, smart home tech in action, or skilled electricians at work with a sophisticated, branded color overlay. Overlay a massive, kinetic typography headline that animates into view, emphasizing key value propositions. The logo will be subtly integrated into the top-left navigation, not a central, blocky element, allowing the visual impact to dominate. A subtle, interactive element, like a glowing light switch icon, could invite interaction or lead to a key service.",
+      "sectionTransitions": "Sections will flow with a narrative quality. Instead of hard breaks, we'll use smooth, theatrical reveals. This could involve a diagonal wipe transition, a subtle content mask animation, or a 'sticky' header that gradually shrinks as the user scrolls, revealing the next section with a gentle fade and scale. Backgrounds might subtly shift color or texture, hinting at the upcoming content.",
+      "gridStrategy": "An asymmetric, modular grid that allows for dynamic compositions. Content blocks will often overlap, images might break out of their defined containers, and text elements could be positioned to create intentional tension and visual interest. This allows for a 'magazine-style' layout, using fluid columns that adapt elegantly across breakpoints, providing a sense of artful curation rather than rigid structure.",
+      "whitespacePhilosophy": "Whitespace is a critical design element, not just empty space. We will use it generously and deliberately to create dramatic pauses, emphasize key content, and guide the user's eye through the narrative. This 'structured breathing room' helps to elevate the content, making the site feel premium, uncluttered, and sophisticated, allowing elements to truly stand out.",
+      "scrollExperience": "A story-driven, immersive scroll. Elements will animate into view with purpose (e.g., text sliding up, images revealing from a mask). Key sections might 'pin' briefly, allowing for interactive exploration or a horizontal scroll module for a project showcase or testimonials. Subtle parallax effects will add depth to background elements, and a progress indicator along the side will subtly show the user's journey through the page, enhancing engagement and providing a sense of progression."
+    },
+    "colorStrategy": {
+      "tailwindColors": {
+        "description": "primary: #2D3A4B, secondary: #F0F2F5, accent: #007AFF, background-light: #FFFFFF, background-dark: #1A1A1A, text-primary: #2D3A4B, text-secondary: #5A6B7C, text-muted: #9AA7B3, border-color: #000000, gradient-blue-start: #007AFF, gradient-blue-end: #0056B3, gradient-gray-start: #F0F2F5, gradient-gray-end: #E0E4E8"
+      },
+      "usage": {
+        "primary": "Used for main backgrounds in dark mode, large, impactful headings, and strong graphical elements. Conveys professionalism and depth.",
+        "secondary": "Predominantly used for light mode backgrounds, subtle section dividers, card backgrounds, and secondary textual information. Provides a clean, modern base.",
+        "accent": "Reserved for primary calls-to-action, interactive elements, highlights, progress indicators, and subtle decorative touches. Commands attention and signifies action."
+      },
+      "gradients": [
+        {
+          "name": "gradient-blue",
+          "value": "linear-gradient(to right, #007AFF, #0056B3)",
+          "usage": "Applied to hero section overlays for brand consistency, primary call-to-action buttons for added depth, and subtle background textures on key feature sections to convey innovation."
+        },
+        {
+          "name": "gradient-gray",
+          "value": "linear-gradient(to bottom, #F0F2F5, #E0E4E8)",
+          "usage": "Used for subtle card backgrounds, soft section dividers, and elegant loading states. Provides a delicate sense of elevation and texture without distraction."
+        }
+      ],
+      "darkMode": {
+        "approach": "A sophisticated, system-level dark mode detection with an accessible toggle for user preference. The dark mode is not merely an inversion but a carefully curated experience.",
+        "colorAdjustments": "Primary (#2D3A4B) becomes the dominant background, secondary (#F0F2F5) shifts to a lighter dark gray for contrast, accent (#007AFF) remains vibrant. Text colors invert for optimal readability, ensuring adequate contrast without harshness. Subtle glow effects replace shadows for depth."
+      }
+    },
+    "typographyStrategy": {
+      "headingFont": "Montserrat",
+      "bodyFont": "Open Sans",
+      "scale": {
+        "h1": "clamp(3rem, 8vw + 1rem, 7rem)",
+        "h2": "clamp(2.5rem, 5vw + 1rem, 5rem)",
+        "h3": "clamp(1.8rem, 3vw + 0.5rem, 3.5rem)",
+        "h4": "clamp(1.4rem, 2vw + 0.2rem, 2.5rem)",
+        "body": "clamp(1rem, 1.5vw + 0.1rem, 1.25rem)",
+        "small": "clamp(0.8rem, 1vw + 0.1rem, 1rem)"
+      },
+      "specialTreatments": [
+        {
+          "name": "Hero Headline",
+          "classes": "font-extrabold tracking-tight uppercase text-primary-dark leading-none text-gradient-blue-text",
+          "usage": "For the main, impactful headline in the hero section, utilizing a text gradient for a dynamic, modern feel."
+        },
+        {
+          "name": "Highlighted Quote",
+          "classes": "italic font-semibold text-primary border-l-4 border-accent pl-4 text-lg",
+          "usage": "For customer testimonials or key brand statements, creating a visually distinct and authoritative block of text."
+        },
+        {
+          "name": "Interactive Link",
+          "classes": "relative text-accent font-medium after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:w-0 after:h-[2px] after:bg-accent after:transition-all after:duration-300 hover:after:w-full",
+          "usage": "For inline links within body text or navigation items, providing a sophisticated, animated underline on hover."
+        }
+      ]
+    },
+    "animationStrategy": {
+      "philosophy": "Animations will be purposeful, elegant, and performant, enhancing user understanding and delight without ever feeling gratuitous or slowing down the experience. They serve to guide, inform, and impress, contributing to a fluid and memorable journey.",
+      "pageTransitions": "A full-screen branded overlay (e.g., a subtle blue gradient wipe or a shape mask) that slides in and out, creating a seamless and branded transition between pages. Alternatively, a subtle cross-fade with a main content scale-up, keeping the user oriented.",
+      "scrollAnimations": [
+        {
+          "trigger": "Section enters viewport",
+          "animation": "Text elements (headings, paragraphs) subtly fade in and slide up from the bottom. Images reveal from a masked state or apply a gentle parallax effect. Service cards might fan out or subtly zoom in.",
+          "elements": [
+            "h2",
+            "p",
+            "img",
+            "div.card"
+          ]
+        },
+        {
+          "trigger": "User scrolls past hero section",
+          "animation": "The main navigation bar shrinks in height, changes background from transparent to a semi-transparent primary-dark, and becomes sticky at the top.",
+          "elements": [
+            "nav"
+          ]
+        },
+        {
+          "trigger": "Call-to-action button enters viewport",
+          "animation": "Button performs a subtle 'pop' animation, scaling up slightly and adding a temporary shadow to draw attention.",
+          "elements": [
+            "button.cta"
+          ]
+        }
+      ],
+      "microInteractions": [
+        {
+          "element": "Buttons",
+          "interaction": "Hover",
+          "animation": "Subtle scale-up (1.05x), a gentle lift with a shadow increase, and a quick background gradient shift for primary buttons. Outline/ghost buttons will fill with accent color."
+        },
+        {
+          "element": "Cards",
+          "interaction": "Hover",
+          "animation": "Translate-y-[-5px] (slight upward lift), accompanied by an increase in shadow depth and a subtle border highlight, indicating interactivity."
+        },
+        {
+          "element": "Input Fields",
+          "interaction": "Focus",
+          "animation": "A smooth transition of the border color to accent and a subtle, glowing ring around the input field, clearly indicating active state."
+        },
+        {
+          "element": "Navigation Links",
+          "interaction": "Hover",
+          "animation": "A dynamic underline animation that draws from left to right, paired with a slight color shift to accent."
+        }
+      ],
+      "performanceNotes": "All animations will leverage CSS transforms (`translate`, `scale`, `rotate`, `opacity`) for hardware acceleration. We will minimize layout thrashing, utilize `will-change` property judiciously, and implement debounced scroll event listeners. Lazy loading for images and videos will be standard to ensure a smooth experience across all devices."
+    },
+    "componentStyles": {
+      "buttons": {
+        "primary": "bg-accent text-white font-semibold py-3 px-6 rounded-md shadow-lg transition-all duration-300 ease-out",
+        "secondary": "bg-secondary text-primary font-semibold py-3 px-6 rounded-md border border-secondary transition-all duration-300 ease-out",
+        "outline": "border-2 border-accent text-accent font-semibold py-3 px-6 rounded-md hover:bg-accent hover:text-white transition-all duration-300 ease-out",
+        "ghost": "text-accent font-semibold py-3 px-6 hover:bg-accent/10 rounded-md transition-all duration-300 ease-out",
+        "sizes": {
+          "sm": "py-2 px-4 text-sm",
+          "md": "py-3 px-6 text-base",
+          "lg": "py-4 px-8 text-lg"
+        },
+        "hoverEffects": "hover:scale-105 hover:shadow-2xl hover:bg-gradient-blue transition-all duration-300 ease-out"
+      },
+      "cards": {
+        "default": "bg-white p-6 rounded-lg shadow-sm border border-gray-200 dark:bg-primary-dark dark:border-primary",
+        "elevated": "bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 dark:bg-primary-darker dark:shadow-light-md",
+        "bordered": "bg-white p-6 rounded-lg border-2 border-accent dark:bg-primary-dark",
+        "interactive": "bg-white p-6 rounded-xl shadow-md cursor-pointer hover:bg-secondary transition-all duration-300 ease-out transform hover:-translate-y-2 dark:bg-primary-dark hover:dark:bg-primary-darker"
+      },
+      "inputs": {
+        "default": "w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-accent-light transition-all duration-200 dark:bg-primary-dark dark:border-gray-700 dark:text-white",
+        "focused": "border-accent ring-2 ring-accent",
+        "error": "border-red-500 text-red-700 placeholder-red-300 dark:border-red-600 dark:text-red-400"
+      },
+      "navigation": {
+        "desktop": "fixed top-0 left-0 right-0 z-50 bg-transparent py-4 transition-all duration-300 ease-in-out lg:bg-transparent lg:hover:bg-primary/80 lg:py-6 lg:text-white",
+        "mobile": "fixed top-0 left-0 w-full h-full bg-primary-dark text-white transform translate-x-full transition-transform duration-500 ease-in-out lg:hidden overflow-y-auto",
+        "linkStyles": "relative text-white text-lg font-medium tracking-wide hover:text-accent after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-accent after:transition-all after:duration-300 hover:after:w-full"
+      }
+    },
+    "imageStrategy": {
+      "treatment": "High-resolution, crisp photography that conveys professionalism and modern technology. Images will often be treated with a subtle, branded duotone overlay (using the accent color and a darker hue) or a consistent color filter for visual cohesion. Some images may be cropped into irregular, organic shapes or partially masked by text elements to enhance the artistic layout.",
+      "placeholders": "During loading, images will display a blurred low-resolution version that smoothly transitions to the high-resolution image. Alternatively, a 'shimmer' effect with a `bg-gradient-gray` and `animate-pulse` class will be used, creating an elegant and branded loading state.",
+      "aspectRatios": {
+        "description": "A dynamic mix of aspect ratios will be employed to create visual interest. This includes full-bleed 16:9 for hero sections, artistic 4:3 or 3:2 for service features, and deliberate 1:1 for team members or detailed work examples. This variety prevents visual monotony and allows for creative compositions within the asymmetric grid."
+      }
+    },
+    "inspirationNotes": [
+      "Locomotive (for their scroll-triggered animations and fluid transitions)",
+      "Red Collar (for their bold typography, asymmetric layouts, and deep visual storytelling)",
+      "Aesthetique (for their elegant use of whitespace and sophisticated micro-interactions)",
+      "The 'glassmorphism' trend for subtle UI elements over dynamic backgrounds, providing depth and modernity.",
+      "The narrative scroll experience found on many Awwwards 'Site of the Day' winners, where content unfolds as a story.",
+      "The use of kinetic typography and text gradients to add visual impact and innovation to headlines."
+    ]
+  },
+  "architecture": {
+    "pages": [
+      {
+        "route": "/",
+        "title": "Home",
+        "description": "Welcome to Westgate Enterprises, LLC",
+        "template": "landing",
+        "sections": [
+          {
+            "id": "hero",
+            "type": "hero",
+            "content": {
+              "headline": "Reliable Electrician Glendale AZ: Powering Your Home & Business with Precision"
+            },
+            "design": {
+              "layout": "full-width",
+              "background": "gradient",
+              "spacing": "large"
+            },
+            "assets": []
+          },
+          {
+            "id": "features",
+            "type": "features",
+            "content": {
+              "items": [
+                {
+                  "title": "Unmatched Expertise",
+                  "description": "Our licensed electricians bring deep experience to every project, ensuring the highest quality workmanship and lasting solutions for your residential or commercial needs.",
+                  "icon": "tools"
+                },
+                {
+                  "title": "Customer-First Approach",
+                  "description": "We believe in service that's second to none. From transparent consultations to guaranteed satisfaction, your needs are our top priority, always.",
+                  "icon": "handshake"
+                },
+                {
+                  "title": "Innovative Solutions",
+                  "description": "Whether it's a critical wiring fix or the seamless integration of state-of-the-art smart home systems, we deliver modern, efficient, and future-ready electrical solutions.",
+                  "icon": "lightbulb"
+                },
+                {
+                  "title": "Transparent & Flexible",
+                  "description": "Receive a full consultation to explore your options. We empower you to choose the scope of work that perfectly aligns with your vision and budget, with no hidden surprises.",
+                  "icon": "magnifying-glass-dollar"
+                }
+              ]
+            },
+            "design": {
+              "layout": "grid-3",
+              "background": "light",
+              "spacing": "large"
+            },
+            "assets": []
+          },
+          {
+            "id": "about-preview",
+            "type": "about",
+            "content": {
+              "headline": "About Us"
+            },
+            "design": {
+              "layout": "split",
+              "background": "white",
+              "spacing": "large"
+            },
+            "assets": []
+          },
+          {
+            "id": "cta",
+            "type": "cta",
+            "content": {
+              "headline": "Ready to Experience Elite Electrical Service in Glendale, AZ?"
+            },
+            "design": {
+              "layout": "centered",
+              "background": "primary",
+              "spacing": "medium"
+            },
+            "assets": []
+          }
+        ],
+        "seo": {
+          "title": "Westgate Enterprises, LLC",
+          "description": "Westgate Enterprises, LLC specializes in residential and commercial electrical services. They are dedicated to providing customer service that is second to none",
+          "keywords": [
+            "electrician Glendale AZ",
+            "electrical services Glendale AZ",
+            "residential electrician Glendale AZ",
+            "commercial electrician Glendale AZ",
+            "emergency electrician Glendale AZ"
+          ]
+        },
+        "priority": 1
+      },
+      {
+        "route": "/about",
+        "title": "About",
+        "description": "About Westgate Enterprises, LLC",
+        "template": "content",
+        "sections": [
+          {
+            "id": "hero",
+            "type": "page-hero",
+            "content": {
+              "headline": "Our Story: Powering Glendale's Future, One Connection at a Time"
+            },
+            "design": {
+              "layout": "centered",
+              "background": "light",
+              "spacing": "large"
+            },
+            "assets": []
+          },
+          {
+            "id": "story",
+            "type": "content",
+            "content": {
+              "body": "Founded in 2017 in the heart of Glendale, AZ, Westgate Enterprises, LLC was built on a singular vision: to redefine electrical services through unparalleled customer dedication and expert craftsmanship. Our founder, a seasoned electrician with a deep-rooted passion for community and quality, recognized a need for a service provider that truly prioritized client satisfaction over quick fixes. From humble beginnings, we've grown into a trusted name, known for our meticulous attention to detail, transparent communication, and unwavering commitment to safety. Every wire we connect, every system we install, is a testament to our belief in empowering homes and businesses with reliable, efficient, and innovative electrical solutions. We're not just electricians; we're your neighbors, dedicated to keeping Glendale brilliantly powered."
+            },
+            "design": {
+              "layout": "prose",
+              "background": "white",
+              "spacing": "large"
+            },
+            "assets": []
+          },
+          {
+            "id": "values",
+            "type": "values",
+            "content": {
+              "items": [
+                {
+                  "title": "Integrity & Trust",
+                  "description": "We operate with unwavering honesty and transparency, building lasting relationships based on trust and ethical practices in every interaction."
+                },
+                {
+                  "title": "Expertise & Excellence",
+                  "description": "Our team comprises highly skilled, licensed professionals committed to continuous learning and delivering superior quality workmanship using the best materials and techniques."
+                },
+                {
+                  "title": "Customer-Centricity",
+                  "description": "Your satisfaction is our ultimate measure of success. We listen, consult, and customize solutions, ensuring your needs are met and expectations surpassed."
+                },
+                {
+                  "title": "Innovation & Adaptability",
+                  "description": "We embrace new technologies, from smart home automation to energy-efficient solutions, constantly evolving to offer cutting-edge electrical services."
+                },
+                {
+                  "title": "Safety First",
+                  "description": "The safety of our clients, their properties, and our team is paramount. We adhere to the strictest safety protocols and codes on every job."
+                }
+              ]
+            },
+            "design": {
+              "layout": "grid-3",
+              "background": "light",
+              "spacing": "large"
+            },
+            "assets": []
+          }
+        ],
+        "seo": {
+          "title": "About | Westgate Enterprises, LLC",
+          "description": "Learn about Westgate Enterprises, LLC",
+          "keywords": [
+            "about",
+            "Westgate Enterprises, LLC"
+          ]
+        },
+        "priority": 2
+      },
+      {
+        "route": "/services",
+        "title": "Services",
+        "description": "Services offered by Westgate Enterprises, LLC",
+        "template": "content",
+        "sections": [
+          {
+            "id": "hero",
+            "type": "page-hero",
+            "content": {
+              "headline": "Our Services"
+            },
+            "design": {
+              "layout": "centered",
+              "background": "light",
+              "spacing": "large"
+            },
+            "assets": []
+          },
+          {
+            "id": "services",
+            "type": "services-grid",
+            "content": {
+              "items": [
+                {
+                  "serviceName": "Residential Electrical Services",
+                  "slug": "residential-electrical-services-glendale-az",
+                  "heroHeadline": "Elevate Your Home with Expert Residential Electrical Services in Glendale, AZ",
+                  "shortDescription": "Comprehensive electrical solutions for homeowners, ensuring safety, efficiency, and modern comfort from essential repairs to smart home integration.",
+                  "longDescription": "Your home is your sanctuary, and its electrical system is its lifeline. At Westgate Enterprises, LLC, we offer a full spectrum of residential electrical services designed to keep your home safe, efficient, and perfectly powered. From troubleshooting minor wiring issues and upgrading outdated panels to installing advanced smart home automation systems and energy-efficient lighting, our licensed electricians handle every project with meticulous care. We understand the unique demands of modern households and are committed to delivering solutions that not only meet current codes but also enhance your daily living. Trust us to provide reliable power, modern conveniences, and the peace of mind you deserve.",
+                  "benefits": [
+                    "Enhanced Safety & Code Compliance for Your Family",
+                    "Increased Home Value & Curb Appeal with Modern Fixtures",
+                    "Reduced Energy Bills Through Efficient Lighting & Systems",
+                    "Seamless Integration of Smart Home Technology",
+                    "Reliable Power Supply for All Your Appliances",
+                    "Personalized Solutions Tailored to Your Lifestyle"
+                  ],
+                  "process": [
+                    {
+                      "step": 1,
+                      "title": "Home Electrical Assessment",
+                      "description": "We begin with a thorough inspection of your current electrical system, discussing your needs, concerns, and desired upgrades."
+                    },
+                    {
+                      "step": 2,
+                      "title": "Customized Solution Design",
+                      "description": "Based on our assessment, we'll design a personalized electrical plan, outlining all options, materials, and a transparent cost estimate."
+                    },
+                    {
+                      "step": 3,
+                      "title": "Professional Installation & Upgrade",
+                      "description": "Our certified electricians will execute the work efficiently, adhering to the highest safety standards and local Glendale electrical codes."
+                    },
+                    {
+                      "step": 4,
+                      "title": "System Testing & Client Walkthrough",
+                      "description": "We rigorously test all installations and walk you through the new system, ensuring everything functions perfectly and you're fully satisfied."
+                    }
+                  ],
+                  "faq": [
+                    {
+                      "question": "When should I consider an electrical panel upgrade for my home?",
+                      "answer": "You should consider an electrical panel upgrade if your home is over 20 years old, you're experiencing frequent tripped breakers, flickering lights, or planning to add major appliances or smart home systems that require more power."
+                    },
+                    {
+                      "question": "Can you install recessed lighting and ceiling fans?",
+                      "answer": "Yes, we expertly install all types of lighting, including recessed lighting, pendant lights, and ceiling fans, enhancing both the aesthetics and functionality of your living spaces."
+                    },
+                    {
+                      "question": "What is involved in smart home wiring installation?",
+                      "answer": "Smart home wiring involves integrating various home systems (lighting, security, climate, entertainment) into a centralized, controllable network. We handle everything from structured wiring to device setup for seamless automation."
+                    }
+                  ],
+                  "cta": "Request Residential Electrical Service"
+                },
+                {
+                  "serviceName": "Commercial Electrical Services",
+                  "slug": "commercial-electrical-services-glendale-az",
+                  "heroHeadline": "Powering Your Business Success: Premier Commercial Electrical Solutions in Glendale, AZ",
+                  "shortDescription": "Robust and reliable electrical services for businesses, ensuring operational efficiency, safety compliance, and minimal downtime.",
+                  "longDescription": "For businesses in Glendale, a reliable electrical system isn't just a convenience; it's a necessity for continuous operation and productivity. Westgate Enterprises, LLC specializes in comprehensive commercial electrical services designed to meet the unique demands of businesses, large and small. From new construction wiring and office build-outs to preventative maintenance, lighting upgrades, data cabling, and emergency repairs, our experienced commercial electricians ensure your business runs smoothly and safely. We understand the importance of minimizing disruption, adhering to strict deadlines, and providing solutions that are energy-efficient and scalable for future growth. Partner with us to keep your business powered for success.",
+                  "benefits": [
+                    "Ensure Operational Continuity & Minimize Downtime",
+                    "Achieve Full Code Compliance & Enhanced Safety",
+                    "Optimize Energy Efficiency & Reduce Operating Costs",
+                    "Scalable Electrical Infrastructure for Future Growth",
+                    "Improved Workplace Productivity & Comfort",
+                    "Reliable Data & Network Cabling Solutions"
+                  ],
+                  "process": [
+                    {
+                      "step": 1,
+                      "title": "Business Needs Assessment",
+                      "description": "We consult with you to understand your business's specific electrical requirements, operational hours, and growth projections."
+                    },
+                    {
+                      "step": 2,
+                      "title": "Strategic Electrical Planning",
+                      "description": "Our team develops a detailed, customized electrical plan, prioritizing efficiency, safety, and compliance with commercial standards."
+                    },
+                    {
+                      "step": 3,
+                      "title": "Expert Commercial Installation",
+                      "description": "Utilizing specialized equipment and techniques, we execute installations and repairs with precision, aiming for minimal disruption to your operations."
+                    },
+                    {
+                      "step": 4,
+                      "title": "Post-Project Support & Maintenance",
+                      "description": "We provide comprehensive testing, final walkthroughs, and are available for ongoing maintenance and support to ensure long-term performance."
+                    }
+                  ],
+                  "faq": [
+                    {
+                      "question": "What are common electrical problems in commercial buildings?",
+                      "answer": "Common issues include overloaded circuits, outdated wiring, faulty lighting systems, power surges, and non-compliance with electrical codes. Our team is equipped to diagnose and resolve all these challenges."
+                    },
+                    {
+                      "question": "Do you offer commercial lighting repair and installation?",
+                      "answer": "Yes, we provide full-service commercial lighting solutions, including energy-efficient LED upgrades, repairs for existing systems, and new installations for interior and exterior spaces."
+                    },
+                    {
+                      "question": "Can you handle electrical upgrades for small businesses?",
+                      "answer": "Absolutely. We specialize in tailoring electrical upgrades and new installations for small to medium-sized businesses, helping them meet increased power demands and improve operational efficiency."
+                    }
+                  ],
+                  "cta": "Request Commercial Electrical Service"
+                },
+                {
+                  "serviceName": "Smart Home Automation",
+                  "slug": "smart-home-automation-glendale-az",
+                  "heroHeadline": "Transform Your Living: Expert Smart Home Automation Installation in Glendale, AZ",
+                  "shortDescription": "Seamlessly integrate intelligent technology into your home for enhanced comfort, security, and energy efficiency.",
+                  "longDescription": "Step into the future of living with Westgate Enterprises, LLC's smart home automation services. We specialize in designing and installing integrated systems that allow you to control lighting, climate, security, entertainment, and more, all from a single intuitive platform. Imagine adjusting your thermostat from your phone, dimming lights with a voice command, or monitoring your home's security from anywhere in the world. Our expert electricians ensure a flawless installation, from robust wiring infrastructure to the precise configuration of your smart devices. We work with leading brands and technologies to create a personalized, intelligent living environment that enhances your comfort, security, and energy efficiency, all tailored to your unique lifestyle.",
+                  "benefits": [
+                    "Unparalleled Convenience and Control",
+                    "Enhanced Home Security and Monitoring",
+                    "Significant Energy Savings and Efficiency",
+                    "Increased Property Value and Modern Appeal",
+                    "Customizable Scenes and Routines for Daily Living",
+                    "Future-Proofing Your Home with Scalable Technology"
+                  ],
+                  "process": [
+                    {
+                      "step": 1,
+                      "title": "Smart Home Vision Consultation",
+                      "description": "We discuss your ideal smart home experience, identifying key areas for automation and preferred functionalities."
+                    },
+                    {
+                      "step": 2,
+                      "title": "System Design & Product Selection",
+                      "description": "Our experts design a tailored smart home system, recommending compatible devices and platforms that align with your budget and goals."
+                    },
+                    {
+                      "step": 3,
+                      "title": "Professional Installation & Integration",
+                      "description": "We meticulously install all wiring and smart devices, ensuring seamless integration and optimal performance throughout your home."
+                    },
+                    {
+                      "step": 4,
+                      "title": "Configuration, Training & Support",
+                      "description": "We configure your system, provide comprehensive training on its use, and offer ongoing support to maximize your smart home experience."
+                    }
+                  ],
+                  "faq": [
+                    {
+                      "question": "What are the main benefits of smart home automation?",
+                      "answer": "Smart home automation offers enhanced convenience (remote control), improved security (smart locks, cameras), greater energy efficiency (smart thermostats, lighting), and increased home value."
+                    },
+                    {
+                      "question": "Is smart home automation compatible with existing homes?",
+                      "answer": "Yes, many smart home systems can be integrated into existing homes with minimal disruption. We assess your current setup and recommend the best solutions for seamless integration."
+                    },
+                    {
+                      "question": "Can I control my smart home system remotely?",
+                      "answer": "Absolutely. Most smart home systems we install offer remote access via smartphone apps, allowing you to control and monitor your home from anywhere with an internet connection."
+                    }
+                  ],
+                  "cta": "Explore Smart Home Solutions"
+                },
+                {
+                  "serviceName": "Electrical Panel Upgrades",
+                  "slug": "electrical-panel-upgrade-glendale-az",
+                  "heroHeadline": "Upgrade Your Power: Expert Electrical Panel Upgrades in Glendale, AZ",
+                  "shortDescription": "Modernize your home or business's electrical foundation for enhanced safety, capacity, and efficiency with a professional panel upgrade.",
+                  "longDescription": "Your electrical panel is the heart of your property's electrical system, distributing power safely to every circuit. If your home or business is experiencing frequent tripped breakers, dimming lights, or if you're planning significant electrical additions like EV chargers or major appliance installations, an electrical panel upgrade is essential. Westgate Enterprises, LLC specializes in professional electrical panel upgrades in Glendale, AZ. We replace outdated, insufficient, or unsafe panels with modern, high-capacity units that meet current electrical codes. This upgrade enhances safety, prevents overloads, and provides the necessary power infrastructure for today's demanding electrical needs, future-proofing your property for years to come.",
+                  "benefits": [
+                    "Enhanced Electrical Safety & Fire Prevention",
+                    "Increased Electrical Capacity for Modern Demands",
+                    "Improved System Reliability & Performance",
+                    "Compliance with Current Electrical Codes",
+                    "Reduced Risk of Power Surges & Damage",
+                    "Preparation for Future Electrical Additions (e.g., EV Chargers)"
+                  ],
+                  "process": [
+                    {
+                      "step": 1,
+                      "title": "Panel Assessment & Load Calculation",
+                      "description": "We thoroughly inspect your existing electrical panel and calculate your property's current and projected electrical load requirements."
+                    },
+                    {
+                      "step": 2,
+                      "title": "Recommendation & Quote",
+                      "description": "Based on the assessment, we recommend the appropriate panel upgrade, explaining the benefits and providing a detailed, transparent quote."
+                    },
+                    {
+                      "step": 3,
+                      "title": "Safe & Efficient Installation",
+                      "description": "Our licensed electricians perform the panel replacement and upgrade with precision, ensuring all connections are secure and up to code."
+                    },
+                    {
+                      "step": 4,
+                      "title": "Testing & Final Inspection",
+                      "description": "We conduct comprehensive testing of the new panel and circuits, followed by a final inspection to confirm safety and optimal functionality."
+                    }
+                  ],
+                  "faq": [
+                    {
+                      "question": "How often should an electrical panel be upgraded?",
+                      "answer": "While there's no strict timeline, panels typically last 20-30 years. Consider an upgrade if your panel is old, you're experiencing electrical issues, or you're adding significant new electrical loads."
+                    },
+                    {
+                      "question": "What are the signs I need an electrical panel upgrade?",
+                      "answer": "Signs include frequently tripped breakers, flickering lights, outlets that don't work, burning smells from the panel, or if your home still uses a fuse box."
+                    },
+                    {
+                      "question": "Do I need a permit for an electrical panel upgrade in Glendale, AZ?",
+                      "answer": "Yes, electrical panel upgrades typically require a permit in Glendale, AZ, to ensure the work meets local safety and building codes. We handle all necessary permitting processes for you."
+                    }
+                  ],
+                  "cta": "Get a Panel Upgrade Estimate"
+                }
+              ]
+            },
+            "design": {
+              "layout": "grid-2",
+              "background": "white",
+              "spacing": "large"
+            },
+            "assets": []
+          }
+        ],
+        "seo": {
+          "title": "Services | Westgate Enterprises, LLC",
+          "description": "Professional services from Westgate Enterprises, LLC",
+          "keywords": [
+            "Residential Electrical Services",
+            "Commercial Electrical Services"
+          ]
+        },
+        "priority": 3
+      },
+      {
+        "route": "/contact",
+        "title": "Contact",
+        "description": "Contact Westgate Enterprises, LLC",
+        "template": "contact",
+        "sections": [
+          {
+            "id": "hero",
+            "type": "page-hero",
+            "content": {
+              "headline": "Connect with Glendale's Premier Electrical Experts Today"
+            },
+            "design": {
+              "layout": "centered",
+              "background": "light",
+              "spacing": "large"
+            },
+            "assets": []
+          },
+          {
+            "id": "form",
+            "type": "contact-form",
+            "content": {},
+            "design": {
+              "layout": "split",
+              "background": "white",
+              "spacing": "large"
+            },
+            "assets": []
+          }
+        ],
+        "seo": {
+          "title": "Contact | Westgate Enterprises, LLC",
+          "description": "Get in touch with Westgate Enterprises, LLC",
+          "keywords": [
+            "contact",
+            "get in touch",
+            "Westgate Enterprises, LLC"
+          ]
+        },
+        "priority": 4
+      }
+    ],
+    "navigation": {
+      "main": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "About",
+          "href": "/about"
+        },
+        {
+          "label": "Services",
+          "href": "/services"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        }
+      ],
+      "cta": {
+        "label": "Get Started",
+        "href": "/contact"
+      }
+    },
+    "footer": {
+      "sections": [
+        {
+          "title": "Company",
+          "links": [
+            {
+              "label": "About",
+              "href": "/about"
+            },
+            {
+              "label": "Services",
+              "href": "/services"
+            },
+            {
+              "label": "Contact",
+              "href": "/contact"
+            }
+          ]
+        }
+      ],
+      "showSocial": true,
+      "showNewsletter": false,
+      "bottomLinks": [
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms of Service",
+          "href": "/terms"
+        }
+      ]
+    },
+    "globalComponents": [
+      {
+        "name": "Header",
+        "purpose": "Site navigation and logo",
+        "props": [
+          {
+            "name": "sticky",
+            "type": "boolean",
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "Footer",
+        "purpose": "Site footer with links",
+        "props": []
+      },
+      {
+        "name": "Button",
+        "purpose": "Reusable button component",
+        "props": [
+          {
+            "name": "variant",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "size",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      {
+        "name": "Card",
+        "purpose": "Content card",
+        "props": [
+          {
+            "name": "title",
+            "type": "string",
+            "required": true
+          },
+          {
+            "name": "description",
+            "type": "string",
+            "required": false
+          }
+        ]
+      }
+    ],
+    "assetMapping": [],
+    "buildOrder": [
+      "tailwind.config.mjs",
+      "src/layouts/Layout.astro",
+      "src/components/Header.astro",
+      "src/components/Footer.astro",
+      "src/components/Button.astro",
+      "src/pages/index.astro",
+      "src/pages/about.astro",
+      "src/pages/services.astro",
+      "src/pages/contact.astro"
+    ],
+    "technicalRequirements": {
+      "integrations": [
+        "@astrojs/tailwind"
+      ],
+      "forms": [
+        {
+          "name": "contact",
+          "fields": [
+            "name",
+            "email",
+            "phone",
+            "message"
+          ],
+          "handler": "formspree"
+        }
+      ],
+      "analytics": [
+        "page_view",
+        "form_submit",
+        "cta_click"
+      ]
+    }
+  }
+}

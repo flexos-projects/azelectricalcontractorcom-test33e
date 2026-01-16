@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+
+const pageTitle = "About";
+const seoTitle = "About | Westgate Enterprises, LLC";
+const seoDescription = "Learn about Westgate Enterprises, LLC";
+
+const heroContent = {
+  headline: "About Westgate Enterprises, LLC",
+  subheadline: "Your Trusted Partner for Electrical Excellence in Glendale, AZ",
+  ctaText: "Our Services",
+  ctaLink: "/services",
+};
+
+const storyContent = {
+  heading: "Our Story & Mission",
+  paragraphs: [
+    "Westgate Enterprises, LLC was founded with a clear vision: to provide unparalleled electrical services to homes and businesses in Glendale, AZ, and surrounding areas. With years of experience, our certified electricians are dedicated to delivering safe, efficient, and reliable solutions tailored to your specific needs.",
+    "We believe in building lasting relationships with our clients through transparent communication, exceptional craftsmanship, and a commitment to exceeding expectations. From routine maintenance to complex installations, we approach every project with the same level of professionalism and attention to detail.",
+    "Our mission is to power your world with precision and integrity, ensuring your electrical systems are not just functional, but optimized for safety, efficiency, and modern living.",
+  ],
+};
+
+const valuesContent = {
+  heading: "Our Core Values",
+  values: [
+    {
+      title: "Reliable Electricians",
+      description: "Our team consists of highly skilled and certified professionals committed to delivering dependable electrical solutions.",
+      image: "https://img1.wsimg.com/isteam/stock/27683/:/rs=w:223,h:223,cg:true,m/cr=w:223,h:223",
+      alt: "Illustrative image showing electrical work or related concepts, representing reliable electricians.",
+    },
+    {
+      title: "Flexible Services",
+      description: "We offer a wide range of customizable electrical services to meet the unique demands of residential and commercial clients.",
+      image: "https://img1.wsimg.com/isteam/stock/26849/:/rs=w:223,h:223,cg:true,m/cr=w:223,h:223",
+      alt: "Illustrative image depicting consultation, planning, or service options, representing flexible services.",
+    },
+    {
+      title: "Customer Satisfaction Guaranteed",
+      description: "Your peace of mind is our priority. We stand behind our work with a commitment to your complete satisfaction.",
+      image: "https://img1.wsimg.com/isteam/stock/27677/:/rs=w:223,h:223,cg:true,m/cr=w:223,h:223",
+      alt: "Illustrative image depicting satisfaction or quality assurance, representing customer satisfaction.",
+    },
+  ],
+};
+---
+
+<Layout title={pageTitle} seoTitle={seoTitle} seoDescription={seoDescription}>
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-primary text-background-light py-16 px-4 md:py-24 font-['Open_Sans']">
+      <div class="container mx-auto text-center">
+        <h1 class="font-['Montserrat'] text-3xl md:text-5xl font-bold mb-4 leading-tight">
+          {heroContent.headline}
+        </h1>
+        <p class="text-lg md:text-xl text-text-muted mb-8 max-w-3xl mx-auto">
+          {heroContent.subheadline}
+        </p>
+        <Button href={heroContent.ctaLink} variant="accent" size="large">
+          {heroContent.ctaText}
+        </Button>
+      </div>
+    </section>
+
+    <!-- Our Story & Mission Section -->
+    <section class="bg-background-light py-16 px-4 md:py-24 font-['Open_Sans']">
+      <div class="container mx-auto max-w-4xl">
+        <h2 class="font-['Montserrat'] text-2xl md:text-4xl font-bold text-text-primary mb-8 text-center">
+          {storyContent.heading}
+        </h2>
+        <div class="text-text-secondary text-lg leading-relaxed space-y-6">
+          {storyContent.paragraphs.map(paragraph => (
+            <p>{paragraph}</p>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Core Values Section -->
+    <section class="bg-secondary py-16 px-4 md:py-24 font-['Open_Sans']">
+      <div class="container mx-auto">
+        <h2 class="font-['Montserrat'] text-2xl md:text-4xl font-bold text-text-primary mb-12 text-center">
+          {valuesContent.heading}
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          {valuesContent.values.map(value => (
+            <div class="flex flex-col items-center text-center p-6 bg-background-light rounded-none">
+              <img
+                src={value.image}
+                alt={value.alt}
+                width="223"
+                height="223"
+                loading="lazy"
+                class="w-36 h-36 md:w-48 md:h-48 object-cover mb-6"
+              />
+              <h3 class="font-['Montserrat'] text-xl md:text-2xl font-semibold text-text-primary mb-3">
+                {value.title}
+              </h3>
+              <p class="text-text-secondary text-base md:text-lg leading-relaxed">
+                {value.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>

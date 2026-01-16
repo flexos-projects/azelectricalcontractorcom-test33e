@@ -1,0 +1,14 @@
+{
+  "projectId": "rebirth_mkhcoxzd_twk2ic",
+  "sourceUrl": "https://azelectricalcontractor.com",
+  "buildTimestamp": "20260116-205817",
+  "generatedAt": "2026-01-16T20:58:30.474Z",
+  "fileCount": 14,
+  "timing": {
+    "ingestMs": 16287,
+    "researchMs": 115626,
+    "designMs": 174289,
+    "buildMs": 285762
+  },
+  "version": "2.0.0"
+}

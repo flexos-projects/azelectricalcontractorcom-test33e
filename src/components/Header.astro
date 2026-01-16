@@ -1,0 +1,39 @@
+---
+interface Props {
+  sticky?: boolean;
+}
+
+const { sticky = false } = Astro.props;
+
+const navLinks = [
+  { name: 'Home', href: '/' },
+  { name: 'Services', href: '/services' },
+  { name: 'About', href: '/about' },
+  { name: 'Contact', href: '/contact' },
+];
+---
+
+<header class:list={[
+  "w-full bg-background-light py-4 px-4 md:px-8",
+  sticky ? "sticky top-0 z-50 shadow-sm" : ""
+]}>
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+    <a href="/" class="text-text-primary text-2xl font-['Montserrat'] font-bold whitespace-nowrap">
+      Reliable Electrician Glendale AZ
+    </a>
+    <nav class="flex-grow">
+      <ul class="flex flex-wrap justify-center md:justify-end gap-x-6 gap-y-2">
+        {navLinks.map((link) => (
+          <li>
+            <a
+              href={link.href}
+              class="text-text-secondary font-['Open Sans'] hover:text-accent transition-colors duration-200"
+            >
+              {link.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

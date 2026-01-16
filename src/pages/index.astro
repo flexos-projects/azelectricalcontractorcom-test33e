@@ -1,9 +1,201 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Button from '../components/Button.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const content = {
+  "homepage": {
+    "heroHeadline": "Reliable Electrician Glendale AZ: Powering Your Home & Business with Precision",
+    "heroSubheadline": "Experience unparalleled electrical services, from essential repairs to cutting-edge smart home automation. Westgate Enterprises, LLC delivers safety, efficiency, and peace of mind.",
+    "heroCTA": "Get Your Free Electrical Quote Today",
+    "valueProps": [
+      {
+        "title": "Unmatched Expertise",
+        "description": "Our licensed electricians bring deep experience to every project, ensuring the highest quality workmanship and lasting solutions for your residential or commercial needs.",
+        "icon": "tools"
+      },
+      {
+        "title": "Customer-First Approach",
+        "description": "We believe in service that's second to none. From transparent consultations to guaranteed satisfaction, your needs are our top priority, always.",
+        "icon": "handshake"
+      },
+      {
+        "title": "Innovative Solutions",
+        "description": "Whether it's a critical wiring fix or the seamless integration of state-of-the-art smart home systems, we deliver modern, efficient, and future-ready electrical solutions.",
+        "icon": "lightbulb"
+      },
+      {
+        "title": "Transparent & Flexible",
+        "description": "Receive a full consultation to explore your options. We empower you to choose the scope of work that perfectly aligns with your vision and budget, with no hidden surprises.",
+        "icon": "magnifying-glass-dollar"
+      }
+    ],
+    "howItWorks": [
+      {
+        "step": 1,
+        "title": "Schedule Your Consultation",
+        "description": "Contact us to discuss your electrical needs. We offer free quotes and flexible scheduling to fit your busy life."
+      },
+      {
+        "step": 2,
+        "title": "Receive Expert Assessment & Options",
+        "description": "Our certified electricians will conduct a thorough assessment, explain your available options clearly, and provide a detailed, transparent estimate."
+      },
+      {
+        "step": 3,
+        "title": "Professional Execution & Satisfaction",
+        "description": "We meticulously execute the agreed-upon work using the highest quality parts and equipment, ensuring your complete satisfaction before we consider the job done."
+      }
+    ],
+    "benefitsSection": {
+      "headline": "Why Choose Westgate Enterprises, LLC for Your Electrical Needs?",
+      "benefits": [
+        {
+          "title": "Enhanced Safety for Your Property",
+          "description": "Our meticulous installations and repairs minimize risks, ensuring your home or business electrical systems meet the highest safety standards and local codes."
+        },
+        {
+          "title": "Reliable & Efficient Performance",
+          "description": "Say goodbye to flickering lights and tripped breakers. We deliver robust electrical solutions designed for optimal performance and long-term reliability."
+        },
+        {
+          "title": "Cost Savings Through Efficiency",
+          "description": "Modern electrical upgrades and energy-efficient solutions can significantly reduce your utility bills and improve your property's overall value."
+        },
+        {
+          "title": "Increased Property Value & Appeal",
+          "description": "Upgraded electrical systems and smart home integrations not only enhance functionality but also boost your property's market appeal and resale value."
+        },
+        {
+          "title": "Peace of Mind with Certified Experts",
+          "description": "Rest easy knowing that highly trained, licensed, and insured professionals are handling your electrical work with precision and care."
+        },
+        {
+          "title": "Customized Solutions for Every Need",
+          "description": "From minor repairs to major installations, we tailor our services to meet your specific requirements, ensuring a perfect fit for your home or business."
+        }
+      ]
+    },
+    "aboutSection": {
+      "headline": "About Westgate Enterprises, LLC",
+      "text": "At Westgate Enterprises, LLC, we are more than just electricians; we are your trusted partners in ensuring the safety, efficiency, and reliability of your electrical systems. Based in Glendale, AZ, we proudly serve residential and commercial clients with a commitment to excellence that is second to none. Our team of highly skilled and certified electricians brings years of experience, a passion for innovation, and a meticulous approach to every project, big or small. We believe in transparent communication, fair pricing, and delivering solutions that not only meet but exceed your expectations. From routine maintenance and urgent repairs to complex installations and cutting-edge smart home integrations, we are dedicated to powering your life with precision and peace of mind. Choose Westgate Enterprises, LLC, and experience the difference that true expertise and a customer-first philosophy can make.",
+      "cta": "Learn More About Us"
+    },
+    "ctaSection": {
+      "headline": "Ready to Power Up Your Property?",
+      "subheadline": "Don't let electrical issues dim your day. Contact Westgate Enterprises, LLC today for reliable, efficient, and safe electrical services.",
+      "cta": "Request a Free Estimate"
+    }
+  }
+};
+
+const assets = {
+  "reliableElectricians": "https://img1.wsimg.com/isteam/stock/27683/:/rs=w:223,h:223,cg:true,m/cr=w:223,h:223",
+  "flexibleServices": "https://img1.wsimg.com/isteam/stock/26849/:/rs=w:223,h:223,cg:true,m/cr=w:223,h:223",
+  "customerSatisfaction": "https://img1.wsimg.com/isteam/stock/27677/:/rs=w:223,h:223,cg:true,m/cr=w:223,h:223"
+};
 ---
 
-<Layout title="Welcome">
-  <main class="min-h-screen flex items-center justify-center">
-    <h1 class="text-4xl font-bold">Welcome to azelectricalcontractorcom-test33e</h1>
-  </main>
+<Layout title="Home" seoTitle="Westgate Enterprises, LLC" seoDescription="Westgate Enterprises, LLC specializes in residential and commercial electrical services. They are dedicated to providing customer service that is second to none">
+  <Header />
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-gradient-blue-start to-gradient-blue-end text-background-light py-16 md:py-24 px-4 md:px-8">
+    <div class="container mx-auto text-center">
+      <h1 class="font-['Montserrat'] text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-tight">
+        {content.homepage.heroHeadline}
+      </h1>
+      <p class="font-['Open_Sans'] text-lg sm:text-xl mb-8 max-w-3xl mx-auto">
+        {content.homepage.heroSubheadline}
+      </p>
+      <Button href="/contact" variant="secondary" size="large">{content.homepage.heroCTA}</Button>
+    </div>
+  </section>
+
+  <!-- Value Propositions Section -->
+  <section class="bg-background-light py-16 md:py-20 px-4 md:px-8">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        {content.homepage.valueProps.map((prop) => (
+          <div class="flex flex-col items-center text-center p-6 bg-secondary rounded-none">
+            <div class="text-accent mb-4">
+              <!-- Placeholder for icons, ideally use an icon component or SVG -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                {prop.icon === 'tools' && <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 012 2v1h4a2 2 0 012 2v7a2 2 0 01-2 2h-4v1a2 2 0 01-2 2H7a2 2 0 01-2-2v-1H1a2 2 0 01-2-2V9a2 2 0 012-2h4V6a2 2 0 012-2h4z" />}
+                {prop.icon === 'handshake' && <path stroke-linecap="round" stroke-linejoin="round" d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />}
+                {prop.icon === 'lightbulb' && <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 17v5m6.447-16.132l-1.033 1.033M12 4.004V3m-6.447 1.868L4.93 6.9M20 7v3h-3V7m0 0h-3V4m0 0l-1.033-1.033M12 20.004V21m-6.447-1.868l-1.033-1.033M4 7v3h3V7m0 0h3V4m0 0l1.033-1.033M12 12a5 5 0 110-10 5 5 0 010 10z" />}
+                {prop.icon === 'magnifying-glass-dollar' && <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7H7m3 0a1 1 0 011 1v1m-3-1v1a1 1 0 001 1h2a1 1 0 001-1v-1a1 1 0 00-1-1h-2z" />}
+              </svg>
+            </div>
+            <h3 class="font-['Montserrat'] text-xl font-semibold text-text-primary mb-2">{prop.title}</h3>
+            <p class="font-['Open_Sans'] text-text-secondary">{prop.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="bg-gradient-gray-start py-16 md:py-20 px-4 md:px-8">
+    <div class="container mx-auto text-center">
+      <h2 class="font-['Montserrat'] text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary mb-12">Our Simple Process</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {content.homepage.howItWorks.map((step) => (
+          <div class="flex flex-col items-center text-center p-6 bg-background-light rounded-none">
+            <div class="w-12 h-12 flex items-center justify-center bg-accent text-background-light rounded-full font-['Montserrat'] text-xl font-bold mb-4">
+              {step.step}
+            </div>
+            <h3 class="font-['Montserrat'] text-xl font-semibold text-text-primary mb-2">{step.title}</h3>
+            <p class="font-['Open_Sans'] text-text-secondary">{step.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="bg-background-light py-16 md:py-20 px-4 md:px-8">
+    <div class="container mx-auto">
+      <h2 class="font-['Montserrat'] text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary text-center mb-12">
+        {content.homepage.benefitsSection.headline}
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {content.homepage.benefitsSection.benefits.map((benefit) => (
+          <div class="p-6 bg-secondary rounded-none flex flex-col items-start">
+            <h3 class="font-['Montserrat'] text-xl font-semibold text-text-primary mb-2">{benefit.title}</h3>
+            <p class="font-['Open_Sans'] text-text-secondary">{benefit.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="bg-gradient-gray-start py-16 md:py-20 px-4 md:px-8">
+    <div class="container mx-auto text-center">
+      <h2 class="font-['Montserrat'] text-2xl sm:text-3xl md:text-4xl font-bold text-text-primary mb-8">
+        {content.homepage.aboutSection.headline}
+      </h2>
+      <p class="font-['Open_Sans'] text-lg text-text-secondary max-w-4xl mx-auto mb-8">
+        {content.homepage.aboutSection.text}
+      </p>
+      <Button href="/about" variant="primary" size="medium">{content.homepage.aboutSection.cta}</Button>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="bg-primary text-background-light py-16 md:py-20 px-4 md:px-8">
+    <div class="container mx-auto text-center">
+      <h2 class="font-['Montserrat'] text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+        {content.homepage.ctaSection.headline}
+      </h2>
+      <p class="font-['Open_Sans'] text-lg mb-8 max-w-3xl mx-auto">
+        {content.homepage.ctaSection.subheadline}
+      </p>
+      <Button href="/contact" variant="secondary" size="large">{content.homepage.ctaSection.cta}</Button>
+    </div>
+  </section>
+
+  <Footer />
 </Layout>
